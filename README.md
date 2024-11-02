@@ -1,7 +1,5 @@
 # CS50_final_project_Quiz-App
 
-# Project Details
-
 **Video Demo**: [https://youtu.be/0eeA_ltBTnA]
 
 ## Project Overview
