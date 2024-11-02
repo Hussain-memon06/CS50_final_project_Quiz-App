@@ -4,12 +4,6 @@
 
 **Video Demo**: [https://youtu.be/0eeA_ltBTnA]
 
-* **Developer**: Muhammad Hussain
-* **GitHub Username**: Hussain-memon06
-* **edX Username**: muhammadhussain_1
-* **Location**: Hyderabad, Sindh, Pakistan
-* **Date**: 19 September 2024
-
 ## Project Overview
 
 Welcome to **Quiz App**, a simple web application designed to test users’ knowledge through a series of fun and engaging questions. Built using Flask, this project presents users with multiple-choice questions, tracks their answers, and displays their final score with feedback at the end of the quiz.
