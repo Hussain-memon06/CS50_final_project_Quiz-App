@@ -4,11 +4,11 @@
 
 **Video Demo**: [https://youtu.be/0eeA_ltBTnA]
 
-**Developer**: Muhammad Hussain
-**GitHub Username**: Hussain-memon06
-**edX Username**: muhammadhussain_1
-**Location**: Hyderabad, Sindh, Pakistan
-**Date**: 19 September 2024
+* **Developer**: Muhammad Hussain
+* **GitHub Username**: Hussain-memon06
+* **edX Username**: muhammadhussain_1
+* **Location**: Hyderabad, Sindh, Pakistan
+* **Date**: 19 September 2024
 
 ## Project Overview
 
