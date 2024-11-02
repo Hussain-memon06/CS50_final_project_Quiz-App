@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=1.0">
+</head>
+<body>
+    <div class="container results-container">
+        <h1>Quiz Results</h1>
+        <p>Your score: {{ score }} out of {{ total_questions }}</p>
+        {% for result in results_data %}
+            <div class="question-result">
+                <p>{{ result.question }}</p>
+                <p>Your answer: <span class="{{ 'correct' if result.user_answer == result.correct_answer else 'incorrect' }}">{{ result.user_answer }}</span></p>
+                <p>Correct answer: {{ result.correct_answer }}</p>
+            </div>
+        {% endfor %}
+        <a class="back-home-btn" href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+</body>
+</html>

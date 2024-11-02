@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1 class="quiz-page-header">Quiz Time!</h1>
+        <div id="timer">Time remaining: 1:00</div>
+
+        <form id="quizForm" class="quiz-form" action="/quiz/{{ question_number }}" method="post">
+            <div class="quiz-question">
+                <p>{{ question.question }}</p>
+                {% for option in question.options %}
+                    <label class="option-label">
+                        <input type="radio" name="answer" value="{{ option }}"> {{ option }}
+                    </label>
+                {% endfor %}
+            </div>
+            {% if error %}
+                <div class="error-msg">{{ error }}</div>
+            {% endif %}
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}?v=1.0"></script>
+</body>
+</html>

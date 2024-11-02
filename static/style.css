@@ -1,0 +1,169 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+}
+
+/* Center the content */
+.container, .results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background-color: #2a2a2a;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Heading */
+.container h1, .results-container h1 {
+    font-size: 3.5rem;
+    color: #ff8a00;  /* Updated color for attention */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Specific header for quiz page */
+.quiz-page-header {
+    color: #3498db; /* Color for the quiz page heading */
+}
+
+/* Subheading text (like "Test your knowledge...") */
+.container p {
+    font-size: 1.8rem;
+    color: #f0f0f0; /* Lighter color for contrast */
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Timer */
+#timer {
+    font-size: 1.5rem;
+    color: #ff8a00;
+    margin-bottom: 20px;
+}
+
+/* Error message */
+.error-msg {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+/* Question styling */
+.quiz-question p {
+    font-size: 1.8rem;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+/* Option styling */
+.option-label {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Button styling */
+.next-btn, .back-home-btn {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.next-btn:hover, .back-home-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* Specific style for the submit button */
+.submit-btn {
+    background: linear-gradient(90deg, #4CAF50, #2e8b57); /* Green gradient background */
+    color: #ffffff; /* White text color */
+    padding: 15px 30px; /* Padding around the text */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 1.3rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Hover effect for the submit button */
+.submit-btn:hover {
+    background: linear-gradient(90deg, #45a049, #2b6e50); /* Darker green gradient */
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); /* Stronger shadow */
+}
+
+/* Results page styling */
+.results-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #ffffff;  /* Default text color */
+}
+
+/* Question block in results */
+.question-result {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+}
+
+/* Correct answer styling */
+.correct {
+    color: #4CAF50; /* Green for correct answers */
+    font-weight: bold;
+}
+
+/* Incorrect answer styling */
+.incorrect {
+    color: #FF4D4D; /* Red for incorrect answers */
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container, .results-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .container h1, .results-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .quiz-question p {
+        font-size: 1.4rem;
+    }
+
+    .option-label {
+        font-size: 1.2rem;
+    }
+
+    .next-btn, .back-home-btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=1.0">
+</head>
+<body>
+    <div class="container">
+        <!-- Main title -->
+        <h1>Quiz Time!</h1>
+
+        <!-- Subheading text -->
+        <p>Test your knowledge with some fun questions.</p>
+
+        <!-- Button to Start the Quiz -->
+        <a href="{{ url_for('quiz', question_number=1) }}" class="next-btn">Start Quiz</a>
+    </div>
+</body>
+</html>
